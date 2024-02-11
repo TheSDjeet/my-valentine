@@ -3,6 +3,8 @@ import ValentinePage from "./pages/valentine";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import EnterValentine from "./pages/EnterValentine";
 import LetsMeetPage from "./pages/LetsMeetPage";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   const router = createBrowserRouter([
@@ -22,6 +24,7 @@ function App() {
   return (
     <>
       <RouterProvider router={router} />
+      <ToastContainer />
     </>
   );
 }

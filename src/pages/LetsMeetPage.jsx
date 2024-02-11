@@ -1,11 +1,13 @@
 import "./LetsMeet.css";
 import emraan from "../assets/emraan.gif";
 import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 
 function LetsMeetPage() {
   const SERVICE_KEY = import.meta.env.VITE_SERVICE_KEY;
   const TEMPLATE_KEY = import.meta.env.VITE_TEMPLATE_KEY;
   const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY;
+  const notify = () => toast("Check email darling!");
 
   const letsSendMail = () => {
     const templateParams = {
@@ -20,6 +22,7 @@ function LetsMeetPage() {
       .then(
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
+          notify();
         },
         (err) => {
           console.log("FAILED...", err);
