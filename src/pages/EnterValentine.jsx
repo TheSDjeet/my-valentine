@@ -27,6 +27,7 @@ export default function EnterValentine() {
           </div>
         </div>
       </div>
+      <div id="heart"></div>
     </>
   );
 }

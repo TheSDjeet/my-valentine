@@ -27,3 +27,51 @@
   height: 100%; /* Ensure image fills container vertically */
   object-fit: contain; /* Maintain aspect ratio; fit image inside container */
 }
+
+#heart {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 90px;
+  margin-top: 10px;
+  animation: heart-bump 1s infinite alternate;
+  cursor: pointer;
+  text-align: center;
+  line-height: 90px; /* Align the text vertically in the middle of the heart */
+}
+
+#heart::before,
+#heart::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 52px;
+  height: 80px;
+  border-radius: 50px 50px 0 0;
+  background: #e3334d;
+}
+
+#heart::before {
+  left: 50px;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+#heart::after {
+  left: 0;
+
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+/* Animations */
+@keyframes heart-bump {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}

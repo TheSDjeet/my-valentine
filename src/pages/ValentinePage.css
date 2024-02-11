@@ -16,65 +16,6 @@
   display: none;
 }
 
-/* Heart styles */
-#heart {
-  position: relative;
-  width: 100px;
-  height: 90px;
-  margin-top: 10px;
-  animation: heart-bump 1s infinite alternate;
-}
-
-#heart::before,
-#heart::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 52px;
-  height: 80px;
-  border-radius: 50px 50px 0 0;
-  background: #e3334d;
-}
-
-#heart::before {
-  left: 50px;
-  transform: rotate(-45deg);
-  transform-origin: 0 100%;
-}
-
-#heart::after {
-  left: 0;
-  transform: rotate(45deg);
-  transform-origin: 100% 100%;
-}
-
-/* Centered text */
-.centered-text {
-  text-align: center;
-  position: relative;
-  top: -60px; /* Adjust this value to vertically center the text */
-  animation: text-scale 1s infinite alternate;
-}
-
-/* Animations */
-@keyframes heart-bump {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.1);
-  }
-}
-
-@keyframes text-scale {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.1);
-  }
-}
-
 .btn,
 .btn:link,
 .btn:visited {
