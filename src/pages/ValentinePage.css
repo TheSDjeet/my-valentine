@@ -20,6 +20,8 @@
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
+  font-family: "Dancing Script";
+  font-weight: 700;
   text-decoration: none;
   padding: 1.5rem 4rem;
   display: inline-block;

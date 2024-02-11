@@ -10,15 +10,15 @@ const ValentinePage = () => {
   const navigate = useNavigate();
 
   const quotes = [
-    "You are the sunshine in my life.",
-    "I cherish every moment with you.",
-    "You make my heart skip a beat.",
-    "Your smile brightens up my day.",
-    "You complete me in every way.",
-    "You're the reason for my happiness.",
-    "My love for you grows stronger every day.",
-    "You're the most beautiful person I know.",
-    "You're my everything.",
+    "You are the sunshine in my life",
+    "I cherish every moment with you",
+    "You make my heart skip a beat",
+    "Your smile brightens up my day",
+    "You complete me in every way",
+    "You're the reason for my happiness",
+    "My love for you grows stronger every day",
+    "You're the most beautiful person I know",
+    "You're my everything",
     "Wll you be my Valentine?",
   ];
 
@@ -55,12 +55,13 @@ const ValentinePage = () => {
               marginBottom: "100px",
               background: lastClick && "#D0BC89",
               color: "#fff",
-              textTransform: "uppercase",
+              // textTransform: "uppercase",
               cursor: lastClick && "pointer",
+              fontFamily: "Dancing Script",
             }}
             disabled={!lastClick}
           >
-            😍 yes ! 💝
+            😍 Yes ! 💝
           </button>
         </div>
 

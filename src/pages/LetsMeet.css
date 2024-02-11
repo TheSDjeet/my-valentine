@@ -1,0 +1,26 @@
+.backgroundLetsMeetPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  background-image: url("/background.jpg");
+  object-fit: cover;
+}
+
+.gifContainerMegha {
+  height: 300px;
+  width: 450px;
+}
+
+.letsMeetH1 {
+  margin-bottom: 30px;
+  color: #e3334d;
+}
+
+.letsMeetSec {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #333;
+}

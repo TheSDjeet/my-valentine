@@ -3,9 +3,11 @@ import us from "../assets/us.jpeg";
 import lovegif from "../assets/my1.gif";
 import useWindowSize from "react-use/lib/useWindowSize";
 import Confetti from "react-confetti";
+import { useNavigate } from "react-router-dom";
 
 export default function EnterValentine() {
   const { width, height } = useWindowSize();
+  const navigate = useNavigate();
   return (
     <>
       <div className="backgroundPage">
@@ -27,7 +29,7 @@ export default function EnterValentine() {
           </div>
         </div>
       </div>
-      <div id="heart"></div>
+      <div id="heart" onClick={() => navigate("/lets_meet_megha")}></div>
     </>
   );
 }
