@@ -12,7 +12,7 @@ function LetsMeetPage() {
       name: "Megha",
       notes: "Check this out!",
     };
-
+    console.log("test");
     emailjs
       .send(SERVICE_KEY, TEMPLATE_KEY, templateParams, {
         publicKey: PUBLIC_KEY,
